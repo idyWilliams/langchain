@@ -1,12 +1,14 @@
 [tool.poetry]
 name = "langchain-crash-course"
 version = "0.1.0"
+package-mode = false
 description = "Everything you need to know to get started with LangChain"
 authors = ["bhancock_ai <brandon@brandonhancock.io>"]
 
 [tool.poetry.dependencies]
 python = ">=3.10.0,<3.12"
 langchain-openai = "^0.1.8"
+torch = "~2.2.0"
 python-dotenv = "^1.0.1"
 langchain = "^0.2.1"
 langchain-community = "^0.2.1"
@@ -35,4 +37,4 @@ ignore = ['W291', 'W292', 'W293']
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api" 
+build-backend = "poetry.core.masonry.api"
